@@ -1,0 +1,1 @@
+print("tôi là Trúc, tôi phụ trách công việc cập nhật nội dung")
