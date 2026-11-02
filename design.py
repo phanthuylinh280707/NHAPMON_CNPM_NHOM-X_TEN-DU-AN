@@ -1,19 +1,13 @@
-def tim_so_lon_nhat(danh_sach):
-    # Kiểm tra nếu danh sách trống
-    if not danh_sach:
-        return None
-    so_lon_nhat = danh_sach[0]
-    for so in danh_sach:
-        if so > so_lon_nhat:
-            so_lon_nhat = so
-            
-    return so_lon_nhat
+# Chương trình kiểm tra số chẵn hay số lẻ
 
+def kiem_tra_chan_le(so):
+    if so % 2 == 0:
+        return "Số chẵn"
+    else:
+        return "Số lẻ"
+
+# Chạy thử chương trình
 if __name__ == "__main__":
-    # Khai báo một danh sách mẫu
-    numbers = [12, 45, 7, 23, 56, 89, 34]
-    
-    # Gọi hàm và in kết quả
-    ket_qua = tim_so_lon_nhat(numbers)
-    print("Danh sách hiện tại:", numbers)
-    print(f"Số lớn nhất trong danh sách là: {ket_qua}")
+    n = 7  # Bạn có thể thay đổi số này để kiểm tra các số khác
+    ket_qua = kiem_tra_chan_le(n)
+    print(f"Số {n} là: {ket_qua}")
